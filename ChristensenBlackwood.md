@@ -1,6 +1,13 @@
-Tests for Precision and Accuracy of Multiple Measuring Devices
+Paper: Tests for Precision and Accuracy of Multiple Measuring Devices
 ================================================================
 
+### Authors
+Ronald Christensen and Larry G. Blackwood
+Technometrics
+Vol. 35, No. 4 (Nov., 1993) (pp. 411-420)
+Page Count: 10
+
+### Summary of Paper
 - We propose a multivariate linear model for analyzing measurement-device data that follow Grubb's model. 
 - The multivariate model generates the well-known regression (multiple correlation) test for equality of device variances. 
 - It also yields a new simultaneous test for equality of variances and biases. 
