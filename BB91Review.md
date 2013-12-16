@@ -29,3 +29,9 @@ Condition; if $\beta_0 =\beta_1=0$
 <!------------------------------------------------------------------------>
 <!---- Page 14 ---->
 #### Time Fuse Data
+
+Grubbs used Pitman's test to determine there is no difference in precision between both sets of measurements.
+However, a highly significant bias exists.
+
+Blackwood and Bradley analyse the data set using their omnibus procedure.
+
