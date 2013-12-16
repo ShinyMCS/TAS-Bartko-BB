@@ -8,12 +8,16 @@
 <!------------------------------------------------------------------------>
 <!---- Page 12 ---->
 #### Background: Grubbs's Model (1983)
-Model used for assessing bias and precision using paired data.
+*Model used for assessing bias and precision using paired data.*
 
+Grubbs (1948, 1973, 1983) proposed a model for $n$ items, each measured by $p$ (usually $p=2$ instruments) such that,
 \[ Y_ij =X_i + \alpha_j +e_ij \].
 
+- $x_i$is the characteristic of interest in the i-th experimental unit
 - $\alpha_j$ bias for instrument $j$
 - $e_{ij}$ is the random error associated with each measurement.
+
+In the literature it is assumed that $x_{i}$ and $e_{ij}$ are independent with normal distributions.
 
 #### Background: Pitman's Test 
 
