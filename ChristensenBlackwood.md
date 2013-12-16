@@ -15,3 +15,10 @@ Page Count: 10
 - We examine the power of these tests for one-dimensional hypotheses, compare them to tests proposed by Grubbs, 
 and propose generalizations of Grubbs's tests. 
 - We also consider extensions of Grubbs's model that allow similar regression and simultaneous tests to be performed.
+
+<hr>
+1. Multivariate Analysis of Measuring-Device Data
+2. Illustrative Examples
+3. Extensions of the regression and Omnibus tests
+4. Generalizations of Grubbs's methods for Subhypotheses
+5. Appendix: Equivalence of Tests for Precision
