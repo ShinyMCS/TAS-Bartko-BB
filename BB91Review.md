@@ -1,6 +1,9 @@
 ### An Omnibus Test for Comparing Two Measuring Devices
 
 #### author: Larry Blackwood and Edwin Bradley
+- Bradley and Blackwood propiose a methodology for assessing bias and precision in measurement instruments.
+- The authors state that the procedure controls the FWER, and as such is more useful than the individual procedures themselves.
+- The procedure depends heavily on the assumption of normality
 
 <!------------------------------------------------------------------------>
 <!---- Page 12 ---->
