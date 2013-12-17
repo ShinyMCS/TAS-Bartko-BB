@@ -4,15 +4,18 @@ Many authors (Bartko 94, Hubbart) assert that for two methods to be considered i
 When considering bias and precision in this context, two interesting scenarios arise.
 
 In the first scenario, let two methods have equivalent measurement precision, but differ due to inter-method bias. In this case, exchangability is still viable, as this inter-method bias may be accounted for in calculations.
+
 In the second scenario, consider two methods of measurement that have negligible but have differing levels of precision. In this case exchangability is not viable, as the less precise method can not be considered equivalent to its more precise counterpart.
 
+Considering this, a useful approach is a sequential testing of both hypotheses, whereby the usefulness of the test of inter-method bias is contigent on the outcome of the test for equivalent precision.
+
+<hr>
 
 ### Application of Procedures.
 
 Bartko (1994) discusses the application of such omnibus procedures (in particular Bradley and Blackwood) as a means 
 of assessing the agreement of two methods of measurement, a discipline commonly referred to as Method Comparison 
-Studies. In the context of method comparison studies, equivalent precision and a lack of bias between measurements are a 
-ncessary condtion for two methods to be in agreement.
+Studies. In the context of method comparison studies, equivalent precision and a lack of bias between measurements are a ncessary condtion for two methods to be in agreement.
 
 
 A key advancement in the formulation of statistical techniques appropriate for comparing methods of measurement was Bland Altman 86, which progressed some 
