@@ -1,4 +1,10 @@
-Application of Procedures.
+### Bias and Precision in the context of agreement.
+
+Many authors (Bartko 94, Hubbart) assert that for two methods to be considered in agreement, they must have equivalent precision and negligible inter-method bias.
+When considering bias and precision in this context, two interesting scenarios arise.
+
+
+### Application of Procedures.
 
 Bartko (1994) discusses the application of such omnibus procedures (in particular Bradley and Blackwood) as a means 
 of assessing the agreement of two methods of measurement, a discipline commonly referred to as Method Comparison 
