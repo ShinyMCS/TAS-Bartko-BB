@@ -3,6 +3,9 @@
 Many authors (Bartko 94, Hubbart) assert that for two methods to be considered in agreement, they must have equivalent precision and negligible inter-method bias.
 When considering bias and precision in this context, two interesting scenarios arise.
 
+In the first scenario, let two methods have equivalent measurement precision, but differ due to inter-method bias. In this case, exchangability is still viable, as this inter-method bias may be accounted for in calculations.
+In the second scenario, consider two methods of measurement that have negligible but have differing levels of precision. In this case exchangability is not viable, as the less precise method can not be considered equivalent to its more precise counterpart.
+
 
 ### Application of Procedures.
 
