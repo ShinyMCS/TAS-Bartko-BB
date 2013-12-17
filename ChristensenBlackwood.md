@@ -33,3 +33,9 @@ Journal of Biopharmaceutical Statistics 12/2004; 14(4):881-92.
 Article: Monitoring linearity of measurement gauges
 Tee-Chin Chang, Fah-Fatt Gan
 Journal of Statistical Computation and Simulation 09/2006; 76(10):889-911.
+
+Simultaneous Monitoring of Bias, Linearity, and Precision of Multiple Measurement Gauges
+Tee-Chin Chang
+Source: Journal of Quality Technology
+Date: July 1, 2008
+http://www.tandfonline.com/doi/abs/10.1080/10629360500282171#.UrBXPtJdU9B
