@@ -22,3 +22,14 @@ and propose generalizations of Grubbs's tests.
 3. Extensions of the regression and Omnibus tests
 4. Generalizations of Grubbs's methods for Subhypotheses
 5. Appendix: Equivalence of Tests for Precision
+
+<hr>
+###Papers
+Bias estimation in method comparison studies.
+Robert T Magari
+Journal of Biopharmaceutical Statistics 12/2004; 14(4):881-92. 
+
+
+Article: Monitoring linearity of measurement gauges
+Tee-Chin Chang, Fah-Fatt Gan
+Journal of Statistical Computation and Simulation 09/2006; 76(10):889-911.
