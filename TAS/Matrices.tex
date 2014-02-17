@@ -1,0 +1,27 @@
+
+%-----------------------------------------------------------------------------%
+\section{$\boldsymbol{J}$ - Exchange Matrice}
+
+If $\boldsymbol{J}$ is an n×n exchange matrix, then the elements of $\boldsymbol{J}$ are defined such that:
+\[
+\boldsymbol{J}_{{i,j}}={\begin{cases}1,&j=n-i+1\\0,&j\neq n-i+1\\\end{cases}}
+\]
+
+\[
+\boldsymbol{J}_{{i,j}}_{{n}}={\begin{pmatrix}
+  0&0&\cdots &0&0&1\\
+  0&0&\cdots &0&1&0\\
+  0&0&\cdots &1&0&0\\
+  \vdots &\vdots &&\vdots &\vdots &\vdots \\
+  0&1&\cdots &0&0&0\\
+  1&0&\cdots &0&0&0
+\end{pmatrix}}.\]
+
+\subsection{Properties}
+\begin{itemize}
+\item $\boldsymbol{J}_{{i,j}}^T = \boldsymbol{J}_{{i,j}}.
+\item $\boldsymbol{J}_{{i,j}}^n = I$ for even n; and $\boldsymbol{J}_{{i,j}}^n = \boldsymbol{J}_{{i,j}}$ for odd n, where n is any integer. Thus J is an involutary matrix; that is, J−1 = J.
+\item The trace of \boldsymbol{J}_{{i,j}} is 1 if n is odd, and 0 if n is even.
+\end{itemize}
+
+%-------------------------------------------------------------------------------%
