@@ -4,7 +4,8 @@ n = 7
 rho = 0.6
 sigma.D = 2.2
 ones = matrix(1, nrow= n)
-Sigma.D = diag(n) - (rho^2) * (diag(n) - (1/n)* ones %*% t(ones)) Sigma.D = Sigma.D * sigma.D^2
+Sigma.D = diag(n) - (rho^2) * (diag(n) - (1/n)*ones %*% t(ones)) 
+Sigma.D = Sigma.D * sigma.D^2
 
 
 
@@ -29,7 +30,8 @@ det(Sigma.D)
 #Quadratic forms
 
 x = rnorm(n)
-matrix(x,nrow=1) %*% solve(Sigma.D) %*% matrix(x,ncol=1) sum( x * (x - (rho^2) * mean(x)) ) / (sigma.D^2 * (1-rho^2))
+matrix(x,nrow=1) %*% solve(Sigma.D) %*% matrix(x,ncol=1) 
+sum( x * (x - (rho^2) * mean(x)) ) / (sigma.D^2 * (1-rho^2))
 
 
 
@@ -51,4 +53,3 @@ matrix(z,nrow=1) %*% solve(Sigma.D) %*% matrix(z,ncol=1)
 
 (sum((d-(rho*sigma.D/sigma.S)*s)^2) + n*(mu.D)^2 -2*n*mean(d)*mu.D 
 	- n*rho^2 * (mean(d)-mu.D)^2 ) / (sigma.D^2 *(1-rho^2))
-
