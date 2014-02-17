@@ -14,8 +14,8 @@ observed outcomes given those parameter values, that is $\mathcal{L}(\theta |x) 
 
 %-----------------------------------------------%
 \section{Components}
-%Part 1
-$\sigma_s$ \\
+\newline
+\textbf{Part 1} $\sigma_s$ \\
 
 \[ \frac{ \partial l}{\partial \sigma_s}  = \frac{-\rho}{1-\rhos^2} \sum \left[ \frac{\hat{d}_i}{\sigma_D}  -\rho \frac{\hat{s}_i}{\sigma_s} \right] \frac{\hat{s}_i}{\sigma^2_s} \]
 
@@ -26,9 +26,8 @@ Let this = 0 to determine Max or Min.
 
 
 %------------------------------------------------%
-
-%Part 2
-$\sigma_D$ \\
+\newline
+\textbf{Part 2} $\sigma_D$ \\
 
 
 
@@ -37,5 +36,18 @@ $\sigma_D$ \\
 
 Let this = 0 to determine Max or Min.
 %------------------------------------------------%
+\newline
+\textbf{Part 3}: $\rho_{DS}$
 
-%Part 3
+\[ \frac{\partial \mathcal{l}}{\partial \rho_{DS}} 
+  = \frac{\partial }{\partial \rho_{DS}}  \left[ \frac{n(n-1)}{2} \mbox{log}(1-\rho^2_{DS} \right]  \]
+  
+Letting $\mathcal{l} = y$ and $\rho_{DS}=x$ we can express this as
+\[ y = log(1-x^2)\]
+Using the Chain Rule to differentiate
+\[ dy/dx = 2x. \frac{1}{1-x^2} = \frac{2x}{1-x^2} \] 
+
+Trial Solution : 2x = 0, hence x=0. Therefore $\rho^2_{DS}=0$.
+
+
+
