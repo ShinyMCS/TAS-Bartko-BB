@@ -42,13 +42,24 @@ Here
 \hat{\alpha} &=& \bar{D} \\
 \hat{\beta}_1 &=& \frac{\sum(D_i - \bar{D}}{s_i - \bar{s}}
 \end{eqnarray}
-
+%---------------------------%
+\newpage
 \subsection{F-tests}
 
 Two independent F- ratio Tests
+
+\begin{itemize}
+\item Test of no intercept parameter
 \[ F^{\ast}_0 = \frac{n\bar{D}^2}{\sigma^2_\varepsilon} \sim F_{df = (1,n-2)}\]
 
+\item Test of no slope parameter
+\[ F^{\ast}_1 = \frac{ \bat{\beta}^2_1\sum(s_i-\bar{s}^2}{\sigma^2_\varepsilon} \sim F_{df = (1,n-2)}\]
+\end{itemize}
 
+\[ F^{\ast}  = \frac{F^{\ast}_0 + F^{\ast}_1 }{2} \sim F_{df = (2,n-2)}\]
+\begin{itemize}
+\item Alternative Representation of Blackwood-Bradley's Test Statisitc
+\end{itemize}
 %---------------------------%
 \textit{F-test notes}
 \begin{itemize}
