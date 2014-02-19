@@ -27,3 +27,23 @@ omnibus test (i.e. Bradlye and Blackwood) may be used to test agreement, by mean
 
 Indeed, various other method comparison techniques have been proposed on an ongoing basis in the intervening period (Kroower Monti 1995 
 , Choudhary and Nagaraja 2007, Huston 2010, Costa-Santos et al 2010, Liao & Capen 2011).
+
+
+### Mean Centering
+Centering predictor variables is one of those simple but extremely useful practices that is easily overlooked.
+
+It’s almost too simple.
+
+Centering simply means subtracting a constant from every value of a variable.  What it does is redefine the 0 point for that predictor to be whatever value you subtracted.  It shifts the scale over, but retains the units.
+
+The effect is that the slope between that predictor and the response variable doesn’t change at all.  But the interpretation of the intercept does.
+
+The intercept is just the mean of the response when all predictors = 0.  So when 0 is out of the range of data, that value  is meaningless.  But when you center X so that a value within the dataset becomes 0, the intercept becomes the mean of Y at the value you centered on.
+
+What’s the point?  Who cares about interpreting the intercept?
+
+It’s true.  In many models, you’re not really interested in the intercept.  In those models, there isn’t really a point, so don’t worry about it.
+
+But, and there’s always a but, in many models interpreting the intercept becomes really, really important.  So whether and where you center becomes important too.
+
+A few examples include models with a dummy-coded predictor, models with a polynomial (curvature) term, and random slope models.
