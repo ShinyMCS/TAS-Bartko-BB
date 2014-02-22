@@ -7,7 +7,8 @@ observed outcomes given those parameter values, that is $\mathcal{L}(\theta |x) 
 
 %Page 7 of TAS submisssion
 
-\[ \mathcal{l} (\mu_d,\sigma^2_D,\sigma^2_S,\rho_{DS}) = \frac{-n}{2}\mbox{log}(2\pi)  - \frac{n^2}{2}\mbox{log}(\sigma^2_D) 
+\[ \mathcal{l} (\mu_d,\sigma^2_D,\sigma^2_S,\rho_{DS}) 
+= \frac{-n}{2}\mbox{log}(2\pi)  - \frac{n^2}{2}\mbox{log}(\sigma^2_D) 
 \frac{n(n-1)}{2}\mbox{log}(1-\rho^2_{DS})
 
 \]
@@ -17,11 +18,16 @@ observed outcomes given those parameter values, that is $\mathcal{L}(\theta |x) 
 \newline
 \textbf{Part 1} $\sigma_s$ \\
 
-\[ \frac{ \partial l}{\partial \sigma_s}  = \frac{-\rho}{1-\rhos^2} \sum \left[ \frac{\hat{d}_i}{\sigma_D}  -\rho \frac{\hat{s}_i}{\sigma_s} \right] \frac{\hat{s}_i}{\sigma^2_s} \]
+\[ \frac{ \partial l}{\partial \sigma_s}  
+= \frac{-\rho}{1-\rhos^2} \sum \left[ \frac{\hat{d}_i}{\sigma_D}  -\rho \frac{\hat{s}_i}{\sigma_s} \right] 
+\frac{\hat{s}_i}{\sigma^2_s} \]
 
 Let this = 0 to determine Max or Min.
 
+\[ \frac{\sum \tilde{d}_1 \tilde{s}_i}{\sigma_D}  - \frac{\rho \sum \tilde{s^2}_i}{\sigma_S} = 0  \]
 
+
+\[ \tilde{\sigma}_S = \tilde{\sigma}_D \frac{\rho \sum \hat{S}^2_i}{\sum \hat{S}_i\hat{D}_i}
 %%% CHECK THIS ONE
 
 
@@ -29,12 +35,13 @@ Let this = 0 to determine Max or Min.
 \newline
 \textbf{Part 2} $\sigma_D$ \\
 
-
-
-
-
+\[ \frac{ \partial l}{\partial \sigma_D} = \frac{-n^2}{\sigma_D} \frac{1}{\sigma^2_D(1-\rho^2)} 
+\sum \left[ \frac{\hat{d}_i}{\sigma_D} - \frac{\rho \tilde{s}_i}{\sigma_S} \right] \tilde{d}_i \]
 
 Let this = 0 to determine Max or Min.
+
+\[ -n \sigma_D  + \frac{1}{1-\rho} \left[ \frac{\sum \tilde{d}^2_i}{\sigma_D} 
++ \frac{\rho \sum \tilde{d}_i \tilde{s}_i }{\sigma_S}  \right]  \]
 %------------------------------------------------%
 \newline
 \textbf{Part 3}: $\rho_{DS}$
@@ -49,5 +56,5 @@ Using the Chain Rule to differentiate
 
 Trial Solution : 2x = 0, hence x=0. Therefore $\rho^2_{DS}=0$.
 
-
+%------------------------------------------------%
 
