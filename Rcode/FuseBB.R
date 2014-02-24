@@ -1,5 +1,6 @@
 ### This Data set is the running times of 20 mechanical fuses measured 
 ### by operators stopping two independent clocks
+require(PairedData)
 
 Fuse <- 1:20
 ###Measuerement by first Instrument
@@ -24,3 +25,5 @@ summary(FitBB)
 #############################################
 
 t.test(Y1,Y2,paired=T)
+
+pitman.morgan.test(Y1,Y2)
