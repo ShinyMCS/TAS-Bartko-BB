@@ -1,6 +1,5 @@
 ### This Data set is the running times of 20 mechanical fuses measured 
 ### by operators stopping two independent clocks
-require(PairedData)
 
 Fuse <- 1:20
 ###Measuerement by first Instrument
@@ -13,6 +12,7 @@ Y2 <- c(5.09,5.04,4.95,5.02,4.90,5.05,4.90,5.15,5.08,4.98,5.04,5.12,4.95,5.23,5.
 
 Ds = Y2-Y1
 Ss = Y2+Y1
+Smc = Ss-mean(Ss) # Mean Centering
 
 mean(Ds)
 sd(Ds)
@@ -22,8 +22,13 @@ sd(Ds)
 FitBB <- lm(Ds ~ Ss)
 
 summary(FitBB)
+
+FitKH <- lm(Ds ~ Smc)
+
+summary(FitKH)
 #############################################
 
 t.test(Y1,Y2,paired=T)
 
-pitman.morgan.test(Y1,Y2)
+cor.test(Ds,Ss)
+var.test(Y1,Y2)
