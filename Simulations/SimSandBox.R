@@ -1,5 +1,13 @@
-M=10000
+# > tab
+#                         TestStat   pVal Sig? (<0.05)
+# Fstar (BB)                4.9433 0.0400            1
+# Mean Centered Intercept   1.9514 0.1794            0
+# Variance                 20.2935 0.0003            1
+# Paired T                 -0.9840 0.3375            0
 
+
+
+M=10000
 OutDat=numeric(M)
 
 ##################################################
@@ -55,3 +63,5 @@ for (i in 1: M)
     # if(Type == 5){break}
     OutDat=c(OutDat,Type)
 }
+
+
