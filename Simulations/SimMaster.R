@@ -61,8 +61,20 @@ set.seed(1234); bias = runif(1,0,maxbias)
 
 Y = rep(c(100,100+bias),2*n) + c(Z%*% t(b)) + e
 
-dat = data.frame(Y, Subject= rep(seq(10),each=nrep)), Method= rep(c("Standard","New"),2*n)), Replication = rep(rep(seq(nrep),each=nrep),n))
+dat = data.frame(Y, Subject= rep(seq(10),each=nrep), Method= rep(c("Standard","New"),2*n), Replication = rep(rep(seq(nrep),each=nrep),n))
 x = unlist(subset(dat, subset= Method == "Standard", select = Y))
 y = unlist(subset(dat, subset= Method == "New", select = Y))
 
+
+# Part 3c - parts 3a and 3b combined as a function
+
+makeData = function(n=10,nrep=1,bias=0,Sigma = diag(rep(n,1+nrep))){
+set.seed(1234); b = mvrnorm(n, mu = rep(0,2), Sigma = Sigma)
+set.seed(1234); e = c(t(mvrnorm(2*n, mu = rep(0,2), Sigma = Sigma)))
+set.seed(1234); bias = runif(1,0,maxbias)
+Y = rep(c(100,100+bias),2*n) + c(Z%*% t(b)) + e
+dat = data.frame(Y, Subject= rep(seq(n),each=nrep), Method= rep(c("Standard","New"),2*n), Replication = rep(rep(seq(nrep),each=nrep),n))
+x = unlist(subset(dat, subset= Method == "Standard", select = Y))
+y = unlist(subset(dat, subset= Method == "New", select = Y))
+}
 ############################################################################
