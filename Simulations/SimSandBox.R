@@ -5,16 +5,17 @@
 # Variance                 20.2935 0.0003            1
 # Paired T                 -0.9840 0.3375            0
 
+library(MASS)
 
 
 M=10000
-OutDat=numeric(M)
+OutDat=numeric()
 
 ##################################################
 for (i in 1: M)
 {
     nrep = 1    # Single Replicater case 
-    n    = 10   # number of cases
+    n    = 5   # number of cases
     maxbias = 5 # Maximum level of intermethod bias
 
 
@@ -28,8 +29,8 @@ for (i in 1: M)
     SetSigma[1,2] = SetSigma[2,1] = gamma * sqrt(SetSigma[1,1] * SetSigma[2,2])
     Z = cbind(rep(c(1,0),2), rep(c(0,1),2))
 
-    b = mvrnorm(n, mu = rep(0,2), Sigma = Sigma)
-    e = c(t(mvrnorm(2*n, mu = rep(0,2), Sigma = Sigma)))
+    b = mvrnorm(n, mu = rep(0,2), Sigma = SetSigma)
+    e = c(t(mvrnorm(2*n, mu = rep(0,2), Sigma = SetSigma)))
     bias = runif(1,0,maxbias)
     Y = rep(c(100,100+bias),2*n) + c(Z%*% t(b)) + e
 
@@ -60,7 +61,7 @@ for (i in 1: M)
     rownames(tab) =c("Fstar (BB)","Mean Centered Intercept","Variance","Paired T")
 
     Type = sum(tab[,3] *c(1,2,4,8))
-    # if(Type == 5){break}
+    if(Type == 7){break}
     OutDat=c(OutDat,Type)
 }
 
