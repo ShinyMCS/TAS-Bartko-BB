@@ -61,8 +61,7 @@ for (i in 1: M)
     rownames(tab) =c("Fstar (BB)","Mean Centered Intercept","Variance","Paired T")
 
     Type = sum(tab[,3] *c(1,2,4,8))
-    if(Type == 7){break}
+    if((Type == 3)|(Type==9)){break}
+    if (i%%500==0){print(i);flush.console()}
     OutDat=c(OutDat,Type)
 }
-
-
